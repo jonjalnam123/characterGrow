@@ -14,12 +14,12 @@ public class WalkTimer {
 
             public void run() {
                 System.out.println("");
-                System.out.println(countDownTime + " 초 로딩중....");
+                System.out.println(countDownTime + " 이동 중...");
                 countDownTime--;
 
                 if (countDownTime < 1) {
                     System.out.println("");
-                    System.out.println("** 로딩 완료 **");
+                    System.out.println("** 도착 **");
                     scheduler.shutdown();
                 }
             }

@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
-import Loding.LodingTimer;
+import Loding.*;
+import Npc.*;
 
 public class App {
 
@@ -818,9 +819,7 @@ public class App {
 
 
     public static void goToDungeon() {
-        
-        System.out.println("진행중");
-        System.out.println("진행중222");
+
     }
 
     /**

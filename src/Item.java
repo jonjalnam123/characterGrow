@@ -8,7 +8,7 @@ public class Item {
     public Item () {
 
         this.itemName = "쪼렙템";
-        this.itemPower = 1;
+        this.itemPower = 100;
         this.itemSkill = "무능력";
         this.itemUpGrade = "1성";
 

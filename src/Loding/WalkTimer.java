@@ -14,7 +14,7 @@ public class WalkTimer {
 
             public void run() {
                 System.out.println("");
-                System.out.println(countDownTime + " 이동 중...");
+                System.out.println(countDownTime + " 보 이동 중...");
                 countDownTime--;
 
                 if (countDownTime < 1) {

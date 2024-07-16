@@ -9,7 +9,8 @@ public class DungeonGatekeeper {
     private String npcContent;
 
     public DungeonGatekeeper() {
-
+        this.npcName = "[ 던전지킴이 ]";
+        this.npcContent = " 님 여기까지 오시다니 대단합니다... 던전에서 어디 한번 잘 버텨보십쇼...";
     }
 
     public String getNpcName() {

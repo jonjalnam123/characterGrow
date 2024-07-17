@@ -3,14 +3,14 @@ public class Item {
     private String itemName; // 아이템 이름
     private int itemPower; // 아이템 파워
     private String itemSkill; // 아이템 능력
-    private String itemUpGrade;
+    private int itemUpGrade;
 
     public Item () {
 
         this.itemName = "쪼렙템";
         this.itemPower = 100;
         this.itemSkill = "무능력";
-        this.itemUpGrade = "1성";
+        this.itemUpGrade = 0;
 
     }
 
@@ -38,11 +38,11 @@ public class Item {
         this.itemSkill = itemSkill;
     }
 
-    public String getItemUpGrade() {
+    public int getItemUpGrade() {
         return this.itemUpGrade;
     }
 
-    public void setItemUpGrade(String itemUpGrade) {
+    public void setItemUpGrade(int itemUpGrade) {
         this.itemUpGrade = itemUpGrade;
     }
     

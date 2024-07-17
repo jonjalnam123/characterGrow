@@ -33,7 +33,7 @@ public class Attack {
                     System.out.println("공격이 빗나갔습니다! 몬스터에게 피해를 입히지 못했습니다.");
 
                 } else {
-                    
+
                     int damage = itemPower;
                     monster1.setMonHp(monster1.getMonHp() - damage);
                     
@@ -41,7 +41,7 @@ public class Attack {
                     System.out.println("몬스터에게 " + damage + "의 피해를 입혔습니다. 남은 체력: " + monster1.getMonHp());
                     
                     if (monster1.getMonHp() <= 0) {
-
+                        
                         result = "1";
 
                     }
@@ -56,7 +56,6 @@ public class Attack {
 
             }
         }
-
         return result;
     }
 }

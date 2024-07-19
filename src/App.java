@@ -852,7 +852,7 @@ public class App {
             DecimalFormat formatter = new DecimalFormat("#,###.##");
             String formattedMoney = formatter.format(money);
 
-            System.out.println("현재 잔액 : " + recipe);
+            System.out.println("현재 잔액 : " + formattedMoney);
             
             System.out.println("");
             System.out.println("소지하고 계신 아래의 아이템을 강화 하겠습니다.");
@@ -930,7 +930,7 @@ public class App {
                 //LodingTimer.Time(3);
                 //Thread.sleep(4000);    
 
-                gameStart("2", user); // 2 캐릭터 보유 상태
+                gameStart("2", user);
 
             } else if ( answer.equals("N") || answer.equalsIgnoreCase("n") ) {
 

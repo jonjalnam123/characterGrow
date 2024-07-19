@@ -42,8 +42,8 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         
-        gameStart("2", user);
-       //main(characterYn); //1
+        //gameStart("2", user); 테스트용
+       main(characterYn); //1
         
     }
 

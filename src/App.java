@@ -758,7 +758,7 @@ public class App {
         gameStartList.put(3, "보유 머니 조회");
         gameStartList.put(4, "아이템 강화");
         gameStartList.put(5, "게임 종료");
-    
+
         //Thread.sleep(1500);
         System.out.println("");
 
@@ -840,12 +840,42 @@ public class App {
 
         } else if ( userMoney > 1000 ) { 
 
-            System.out.println("");
-            System.out.println("아이템 강화를 진행하시겠습니까?");
+            trueOrFalse = true;
+
+            while (trueOrFalse) {
+    
+                System.out.println("");
+                System.out.println("아이템 강화를 진행하시겠습니까?");
+    
+                System.out.println("");
+                System.out.print("Y (y) or N (n) : ");
+                String answer = sc.next();
+    
+                if ( answer.equals("Y") || answer.equalsIgnoreCase("y") ) {
+                    
+                    break;
+    
+                } else {
+    
+                    System.out.println("");
+                    System.out.println("** 잘못 입력하셨습니다. 다시 입력해 주세요. **");
+
+                    //Thread.sleep(1000);
+
+                    continue;
+                }
+            }
+
+            // 돈 형식 지정
+            double moneyOrg = userMoney;
+            DecimalFormat formatterOrg = new DecimalFormat("#,###.##");
+            String formattedMoneyOrg = formatterOrg.format(moneyOrg);
 
             System.out.println("");
-            System.out.println("현재 보유하고 계신 머니 " + userMoney + "에서 강화비용 1,000원 이 차감 됩니다.");
+            System.out.println("현재 보유하고 계신 머니 " + formattedMoneyOrg + "에서 강화비용 1,000원 이 차감 됩니다.");
             int recipe = userMoney - 1000;
+
+            user.setMoney(recipe); // 캐릭터 머니 저장
 
             // 돈 형식 지정
             double money = recipe;
@@ -930,7 +960,7 @@ public class App {
                 //LodingTimer.Time(3);
                 //Thread.sleep(4000);    
 
-                gameStart("2", user);
+                gameStart("2", user); // 2 캐릭터 보유 상태
 
             } else if ( answer.equals("N") || answer.equalsIgnoreCase("n") ) {
 

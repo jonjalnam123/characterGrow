@@ -9,7 +9,7 @@ public class Upgrade {
         String result = "";
 
         // 업그레이드 빗나갈 확률 설정 (20%)
-        double missChance = 0.2;
+        double missChance = 0.4;
 
         ItemUpgradeTimer.Time(3);
         Thread.sleep(4000);    
